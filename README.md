@@ -1,5 +1,6 @@
 1.  `POST   {{url}}/agency`
 
+```
 {
     "agency": {
       "agencyId": "310",
@@ -8,7 +9,7 @@
       "state": "Karnataka",
       "city": "Bangalore",
       "phoneNumber": "9620739951"
-      },
+    },
       
     "client": {
       "name": "Sharan",
@@ -18,23 +19,26 @@
       "phoneNumber": "9620739000",
       "totalBill": 32
     }
-}
+} 
+```
 
 2.  `PATCH   {{url}}/client/:clientId`
 
 request body
-
+```
   {
     "name": "Jhon",
     "phoneNumber": "9620739000",
     "totalBill": 300
   }
-
+```
 3. `GET   {{url}}/agency/top-clients?top=5`
 
 Response
+```
   {
     "AgencyName": "Beta",
     "ClientName": "Sharan",
     "TotalBill": 625
   }
+  ```
